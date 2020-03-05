@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table app</title>
+</head>
+<body>
+  <h1>Welcome to {{title}}</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        Enter a number :
+        <input type="text" name="table" class ="form-control" placeholder="Enter a value" [(ngModel)]="tablevalue">
+        <p>Value is : {{tablevalue}}</p>
+      </div>
+    </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <app-table [val]="tablevalue"></app-table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
